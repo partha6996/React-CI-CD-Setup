@@ -28,3 +28,17 @@ jobs:
             - name: "List directories"
               run: ls
 
+            - name: "Run lints"
+              run: npm run lint
+
+            - name: "Run tests"
+              run: npm test
+
+            - name: "Run bullet"
+              run: npm run build
+
+            - name: "upload product-ready build files"
+              uses: actions/upload-artifact@v4
+              with:
+                name: build
+                path: /dist
