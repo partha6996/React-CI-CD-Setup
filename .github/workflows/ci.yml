@@ -17,8 +17,8 @@ jobs:
                 node-version: '21'
 
             - name: node --version
-              uses: node --version
-               
+              run: node --version
+
 
 
 
